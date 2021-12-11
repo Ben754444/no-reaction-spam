@@ -8,6 +8,6 @@ Turns this mess
 Into this
 ![non chaos](static/non-chaos.png)
 
-When clicked, the tick will show all reactions, and the cross will remove itself and the tick. These are optional and can be disabled in the settings tab for ultimate spam removal.
+When clicked, the tick will show all reactions, and the cross will remove itself and the tick. These are optional and can be disabled in the settings tab to remove all emojis completely.
 
 Additionally, the reaction count for the tick emoji shows the number of reactions hidden. 
