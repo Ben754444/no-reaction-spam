@@ -1,10 +1,8 @@
 const { Plugin } = require("powercord/entities");
 const { inject, uninject } = require('powercord/injector');
-const {React, getModule, FluxDispatcher, channels, getCurrentUser} = require("powercord/webpack")
+const {React, getModule, FluxDispatcher, channels} = require("powercord/webpack")
 const MessageAccessories = getModule(['MessageAccessories'], false);
-const { findInReactTree } = require("powercord/util");
 const getCachedMessage = getModule(['getMessages'], false).getMessage;
-const keyCode = 8 // space
 const reactionCache = {}
 const Settings = require("./components/Settings.jsx");
 let settings;

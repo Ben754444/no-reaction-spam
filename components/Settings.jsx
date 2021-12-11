@@ -1,7 +1,6 @@
-const { React } = require('powercord/webpack'); // We have to import React
-const { TextInput, SwitchItem, Category } = require('powercord/components/settings'); // Here we Import the TextInput Component for later use
+const { React } = require('powercord/webpack');
+const { TextInput, SwitchItem, Category } = require('powercord/components/settings');
 
-//This section is the Page the user sees
 module.exports = class settings extends React.PureComponent {
     constructor(props) {
         super(props);
