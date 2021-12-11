@@ -1,0 +1,8 @@
+{
+  "name": "No Reaction Spam",
+  "version": "0.0.1",
+  "description": "Removes spammy reactions from messages because nobody cares and my pc is ass at rendering them all",
+  "author": "Ben.#0714",
+  "license": "MIT",
+  "nsfw": false
+}
