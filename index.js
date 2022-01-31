@@ -18,7 +18,7 @@ module.exports = class noReactions extends Plugin {
         inject('no-reactions.remove-reactions', MessageAccessories, 'default', (args, res) => {
             if(settings.get("debug")) console.log(reactionCache[res.props.message.id])
             if(settings.get("debug"))  console.log(res.props.message.reactions)
-            if(reactionCache[res.props.message.id] && settings.get("saveReactionStatus")) return res; //BROKEN if exists in the cache AND the user wants the status saved, dont update it
+            if(reactionCache[res.props.message.id] && settings.get("saveReactionStatus", true)) return res; //BROKEN if exists in the cache AND the user wants the status saved, dont update it
             if(res.props.message.reactions.length > Number(settings.get("spamThreshold"))){
                 reactionCache[res.props.message.id] = res.props.message.reactions
                 if(settings.get("displayOptions")){
